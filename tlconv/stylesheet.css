@@ -70,8 +70,28 @@ body {
   text-align       : center;
 }
 
-@media (max-width:767px) {
-  .textArea1{
-    width : 100%;
+@media screen and (max-width: 1024px) {
+/* 1024pxまでの幅の場合に適応される */
+  .textArea1 {
+    width : 750px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+/* 768pxまでの幅の場合に適応される */
+  .textArea1 {
+    width : 750px;
+  }
+}
+@media screen and (max-width: 480px) {
+/* 480pxまでの幅の場合に適応される */
+  .textArea1 {
+    width : 480px;
+  }
+}
+@media screen and (max-width: 350px) {
+/* 350pxまでの幅の場合に適応される */
+  .textArea1 {
+    width : 350px;
   }
 }
