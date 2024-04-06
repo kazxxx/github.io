@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./stylesheet.css">
+  </head>
+  <body>
+    <div class="header">持ち越しTL変換</div>
+    <div class="container">
+      <div class="box">
+        <input type="button" class="button" value="変換" onclick=main()><label style="width: 125px; display: inline-block; text-align: right; margin-right: 10px">持ち越し時間</label><input type="text" id="remainingTime" class="textArea2" placeholder="1:30" value=""><br>
+        <p>
+        <label>タイムライン</label><br>
+        <textarea id="currentTL" class="textArea1" spellcheck="false" rows="10"></textarea><br>
+        <br><p>
+        <label>変換後タイムライン</label><br>
+        <textarea id="newTL" class="textArea1" spellcheck="false" rows="3"></textarea>
+      </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
