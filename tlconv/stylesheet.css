@@ -72,6 +72,6 @@ body {
 
 @media (max-width:767px) {
   .textArea1{
-    width : 500px;
+    width : 100%;
   }
 }
