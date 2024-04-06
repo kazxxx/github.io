@@ -69,3 +69,9 @@ body {
   background-color : #3c366b;
   text-align       : center;
 }
+
+@media (max-width:767px) {
+  .textArea1{
+    width : 400px;
+  }
+}
