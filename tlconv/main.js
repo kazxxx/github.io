@@ -27,7 +27,7 @@ function main() {
 
     //1件もマッチしなかった場合はエラーメッセージを出力して終了
     if (matchCount == 0) {
-        outTextarea.value = "クリップボード上のテキストに時間の記述(0:00)が見つかりませんでした";
+        outTextarea.value = "タイムラインのテキストに時間の記述(0:00)が見つかりませんでした";
         return;
     }
 
