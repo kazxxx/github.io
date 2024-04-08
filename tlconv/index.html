@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>持ち越しTL変換</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,target-desitydpi=device-dpi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="./stylesheet.css">
   </head>
   <body>
-    <div class="header">持ち越しTL変換</div>
-    <div class="container">
-      <div class="box">
-        <input type="button" class="button" value="変換" onclick=main()><label style="width: 125px; display: inline-block; text-align: right; margin-right: 10px">持ち越し時間</label><input type="text" id="remainingTime" class="textArea2" placeholder="1:30" value=""><br>
-        <p>
-        <label>タイムライン</label><br>
-        <textarea id="currentTL" class="textArea1" spellcheck="false" rows="10"></textarea><br>
-        <br><p>
-        <label>変換後タイムライン</label><br>
-        <textarea id="newTL" class="textArea1" spellcheck="false" rows="3"></textarea>
+    <div class="w-full container">
+      <div class="bg-indigo-900">
+        <div class="mx-auto max-w-screen-md header">
+        持ち越しTL変換
+        </div>
+      </div>
+      <div class="mx-auto max-w-screen-md" style="padding: 16px;">
+        <div>
+          <div class="w-full">
+            <p>
+            <input type="button" class="button" value="変換" onclick=main()><label class="label">持ち越し時間</label><input type="text" class="textArea2" id="remainingTime" placeholder="1:30" value=""><br>
+            <p>
+            <label class="block tracking-wide">タイムライン</label><br>
+            <textarea id="currentTL" class="w-full textArea1" spellcheck="false" rows="10" wrap="off"></textarea><br>
+            <p>
+            <label>変換後タイムライン</label><br>
+            <textarea id="newTL" class="w-full textArea1" spellcheck="false" rows="3" wrap="off"></textarea>
+          </div>
+        </div>
       </div>
     </div>
     <script type="text/javascript" src="./main.js"></script>

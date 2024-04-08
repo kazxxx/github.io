@@ -1,9 +1,9 @@
-html {
-  scrollbar-gutter: stable;
+*,:after,:before{
+    box-sizing:border-box;
 }
 
 body {
-  margin: 0;
+  margin: 0px;
 }
 
 .button {
@@ -16,11 +16,11 @@ body {
   background    : rgb(59 130 246);
   color         : #ffffff;
   line-height   : 1em;
+  border-radius: .25rem;
 }
 
 .textArea1 {
   resize        : vertical;
-  width         : 750px;
   background    : #edf2f7;
   border        : 1px solid rgb(156 163 175);
   border-radius : 4px;
@@ -43,25 +43,20 @@ body {
   letter-spacing: .1em;
   line-height   : 19px;
 }
+
 .textArea2:placeholder-shown {
   color         : #909090;
 }
 
-.container {
-  margin-top      : 20px;
-  margin-bottom   : 100px;
-  display         : flex;
-  justify-content : center;
-  flex-wrap       : wrap;
-}
-
-.box {
-  justify-content : left;
+.label {
+  width: 125px;
+  text-align: right;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 .header {
   margin           : 0px;
-  max-width        : 100%px;
   padding          : 7px;
   font-size        : 120%;
   font-weight      : bold;
@@ -70,28 +65,35 @@ body {
   text-align       : center;
 }
 
-@media screen and (max-width: 1024px) {
-/* 1024pxまでの幅の場合に適応される */
-  .textArea1 {
-    width : 750px;
-  }
+.bg-indigo-900 {
+   background-color : #3c366b;
 }
 
-@media screen and (max-width: 768px) {
-/* 768pxまでの幅の場合に適応される */
-  .textArea1 {
-    width : 750px;
-  }
+.container {
+  width: 100%;
 }
-@media screen and (max-width: 480px) {
-/* 480pxまでの幅の場合に適応される */
-  .textArea1 {
-    width : 480px;
-  }
+
+.mx-auto{
+    margin-left:auto;
+    margin-right:auto
 }
-@media screen and (max-width: 350px) {
-/* 350pxまでの幅の場合に適応される */
-  .textArea1 {
-    width : 350px;
-  }
+
+.max-w-screen-md{
+    max-width:768px
+}
+
+.w-full{
+    width:100%
+}
+
+.min-h-screen{
+    min-height:100vh
+}
+
+.text-left{
+    text-align:left
+}
+
+.text-right{
+    text-align:right
 }

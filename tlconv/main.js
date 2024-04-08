@@ -33,13 +33,17 @@ function main() {
 
     //新TLの格納先変数  初期値は最初の時間(0:00 or 00:00)が現れる前までの文字列を格納
     let newTL = currentTL.slice(0, matchResult[0][1]) + convMMSS(matchResult[0][0], getRemainingTime, matchResult[0][0].length);
-    //outText = getData
+    
+    //新TL作成（2つ目以降の時間を置き換え）
     for (let i=1; i<matchCount; i++) {
         newTL += currentTL.slice(matchResult[i-1][1] + matchResult[i][0].length, matchResult[i][1]) + 
         convMMSS(matchResult[i][0], getRemainingTime, matchResult[i][0].length);
     }
+    
+    //最後の時間を置き換え
     newTL += currentTL.slice(matchResult[matchCount-1][1] + matchResult[matchCount-1][0].length);
 
+    //textareaに表示＆縦幅調整
     outTextarea.value = newTL;
     outTextarea.style.height = "58px";
     outTextarea.style.height = `${outTextarea.scrollHeight}px`;
